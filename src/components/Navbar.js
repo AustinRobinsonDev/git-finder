@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-
 const Navbar = ({icon, title}) => {
 
         return (
@@ -18,8 +17,6 @@ const Navbar = ({icon, title}) => {
         );
 }
 
-
-
 Navbar.defaultProps = {
     title: 'Git Finder',
     icon: 'fab fa-github'
@@ -29,6 +26,4 @@ Navbar.propTypes = {
     title: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired
 };
-
-
 export default Navbar

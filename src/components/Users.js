@@ -2,13 +2,10 @@ import React, {useContext} from 'react';
 import GithubContext from './context/github/githubContext'
 import UserItem from './UserItem';
 import Spinner from './Spinner';
-import PropTypes from 'prop-types';
-
 
 const Users = ( ) => {
+
     const githubContext = useContext(GithubContext);
-
-
     const { loading, users} = githubContext;
         if(loading){
             return <Spinner />
@@ -21,8 +18,6 @@ const Users = ( ) => {
                 </div>
             );
         }
-     
-    
 }
 
 const userStyle = {

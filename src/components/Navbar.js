@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const Navbar = ({icon, title}) => {
 
         return (
-            <nav className="navbar bg-primary">
-                <h1>
+            <nav className="navbar bg-dark">
+                <h1 className="x-large ">
                     <i className={icon} /> {title}
                 </h1>
                 <ul>
